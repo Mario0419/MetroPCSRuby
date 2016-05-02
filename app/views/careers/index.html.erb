@@ -1,20 +1,12 @@
-<h1>Careers#index</h1>
+<html>
+<%= render "layouts/header" %>
+    <div class="container">
+        <h1 class="cover-heading">Careers</h1>
+        <p class="lead">At MetroPCS No Limit Talk, we are always looking for people to...</p>
+        
+    <p>Careers</p>
+        
 <p>Find me in app/views/careers/index.html.erb</p>
-<%= form_for @career do |f| %>
-
-<p>
-    <%= f.label :first %><br>
-    <%= f.text_field :first %><br>
-    <%= f.label :last %><br>
-    <%= f.text_field :last %>
-</p>
-<p>
-    <%= f.label :info %><br>
-    <%= f.text_field :info %>
-</p>
-
-<p>
-    <%= f.submit %>
-</p>
-
-<% end %>
+        <%= link_to "Apply", careers_application_path, :class => "btn btn-default navbar-btn" %>
+</div>
+</html>
